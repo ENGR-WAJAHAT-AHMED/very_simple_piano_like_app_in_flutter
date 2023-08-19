@@ -34,12 +34,20 @@ class PianoButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       flex: 1,
-      child: Padding(
-        padding: const EdgeInsets.only(
-            right: 8.0, bottom: 2.0, top: 20),
-        child: RaisedButton(
-          onPressed: () {},
-        ),
+      child: Stack(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(
+                right: 4.0, bottom: 2.0, top: 2.0,left: 2.0),
+            child: Container(
+              width: double.infinity,
+              height: double.infinity,
+              child: RaisedButton(
+                onPressed: () {},
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
