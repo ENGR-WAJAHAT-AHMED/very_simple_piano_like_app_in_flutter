@@ -38,7 +38,7 @@ class PianoButton extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(
-                right: 4.0, bottom: 2.0, top: 2.0,left: 2.0),
+                right: 4.0, bottom: 2.0, top: 2.0, left: 2.0),
             child: Container(
               width: double.infinity,
               height: double.infinity,
@@ -47,9 +47,18 @@ class PianoButton extends StatelessWidget {
               ),
             ),
           ),
+          Positioned(
+            child: Container(
+              width: 250,
+              height: 40,
+              child: RaisedButton(
+                color: Colors.black87,
+                onPressed: () {  },
+              ),
+            ),
+          ),
         ],
       ),
     );
   }
 }
-
