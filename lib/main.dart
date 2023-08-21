@@ -23,7 +23,6 @@ class PianoApp extends StatelessWidget {
             PianoButton1(),
             PianoButton(),
             PianoButton(),
-            PianoButton1(),
           ],
         ),
       ),
@@ -37,7 +36,6 @@ class PianoButton extends StatelessWidget {
     return Expanded(
       flex: 1,
       child: Stack(
-
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(
