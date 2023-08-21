@@ -13,15 +13,17 @@ class PianoApp extends StatelessWidget {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            PianoButton1(),
+            PianoButton(),
+            PianoButton(),
+            PianoButton1(),
             PianoButton(),
             PianoButton(),
             PianoButton(),
+            PianoButton1(),
             PianoButton(),
             PianoButton(),
-            PianoButton(),
-            PianoButton(),
-            PianoButton(),
-            PianoButton(),
+            PianoButton1(),
           ],
         ),
       ),
@@ -35,7 +37,8 @@ class PianoButton extends StatelessWidget {
     return Expanded(
       flex: 1,
       child: Stack(
-        children: [
+
+        children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(
                 right: 4.0, bottom: 2.0, top: 2.0, left: 2.0),
@@ -48,12 +51,37 @@ class PianoButton extends StatelessWidget {
             ),
           ),
           Positioned(
+            top: -25.0,
             child: Container(
-              width: 250,
-              height: 40,
+              width: 280,
+              height: 60,
               child: RaisedButton(
                 color: Colors.black87,
                 onPressed: () {  },
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+class PianoButton1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      flex: 1,
+      child: Stack(
+
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(
+                right: 4.0, bottom: 2.0, top: 2.0, left: 2.0),
+            child: Container(
+              width: double.infinity,
+              height: double.infinity,
+              child: RaisedButton(
+                onPressed: () {},
               ),
             ),
           ),
