@@ -1,6 +1,6 @@
-# piano
+# Flutter_UI_Piano
 
-A new Flutter project.
+A Flutter project that demonstrates a piano user interface.
 
 ## Getting Started
 
