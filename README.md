@@ -2,6 +2,8 @@
 
 A Flutter project that demonstrates a piano user interface.
 
+## SCREENSHOT
+![PIANO](https://github.com/ENGR-WAJAHAT-AHMED/very_simple_piano_like_app_in_flutter/assets/122207170/373f3df9-583b-440d-a2c2-d2b9dc2a2246)
 ## Getting Started
 
 This project is a starting point for a Flutter application.
